@@ -1,0 +1,18 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Nov 22 11:21:04 2021
+
+@author: mrhey
+"""
+
+a = int(input("masukan angka: "))
+b = int(input("ingin dipangkatkan ke berapa: "))
+def pangkat(a,b):
+ 
+ if b >= 1 :
+  return a * pangkat(a, b - 1)
+ 
+ return a
+hasil = pangkat(a, b)
+
+print(f"hasil nya adalah = {hasil}")
